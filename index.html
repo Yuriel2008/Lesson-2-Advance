@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hi</h1>
+    <p>Your age: <span id="age-one"></span></p>
+    <p id="warning-message" style="color: red;"></p>
+    <p id="success-message" style="color: green;"></p>
+
+    <script>
+        // JavaScript
+
+        let age = 21
+
+        document.getElementById("age-one").innerHTML = age
+
+        if (age < 20) {
+            let message = "You are not registered as a compatible employee."
+            document.getElementById("warning-message").innerText = message
+        } else {
+            let message = "You are acceptable to be an employee!!!"
+            document.getElementById("success-message").innerText = message
+
+        }
+
+        let number_of_products = 10
+
+        if (number_of_products < 8) {
+            console.log("No shipment.")
+        } else if (number_of_products <= 16) {
+            console.log("Shipment in 10 hours.")
+        } else {
+            console.log("Shipment in 16 hours.")
+        }
+
+let a = 77
+let b = 5
+        if (a > b){
+            console.log("a > b ")
+        } else {
+            console.log("b > a")
+        }
+    </script>
+</body>
+
+</html>
